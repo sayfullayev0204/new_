@@ -1,0 +1,273 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-19 17:41+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\templates\detail.html:79
+msgid "Videolar"
+msgstr "Videos"
+
+#: .\templates\detail.html:95
+msgid "Rasmlar"
+msgstr "Images"
+
+#: .\templates\devon.html:125
+msgid "Hofiz Xorazmiy — Devon va boshqa nashrlar"
+msgstr ""
+
+#: .\templates\devon.html:217
+msgid "Nashirlar"
+msgstr ""
+
+#: .\templates\footer.html:29
+msgid "Barcha huquqlar himoyalangan"
+msgstr "all rights reserved"
+
+#: .\templates\header.html:48
+msgid "Bosh sahifa"
+msgstr "Home"
+
+#: .\templates\header.html:50
+msgid "Devon va nashrlar"
+msgstr "Devon and publications"
+
+#: .\templates\header.html:51
+msgid "Saralangan she'rlar"
+msgstr "Selected poems"
+
+#: .\templates\header.html:58 .\templates\news.html:52
+msgid "Hikmatlar"
+msgstr "Proverbs"
+
+#: .\templates\header.html:59
+msgid "Tadqiqotchining ilmiy ishlari"
+msgstr "Researcher's scientific work"
+
+#: .\templates\header.html:60 .\templates\leadership.html:76
+msgid "Sayt ko'zgusi"
+msgstr "Site mirror"
+
+#: .\templates\leadership.html:75 .\templates\news.html:51
+#: .\templates\olimpiada.html:65
+msgid "Hofiz Xorazmiy"
+msgstr ""
+
+#: .\templates\olimpiada.html:66
+msgid "Ilmiy ishlar"
+msgstr ""
+
+#~ msgid "Maktab"
+#~ msgstr "School"
+
+#~ msgid "Haqida"
+#~ msgstr "About"
+
+#~ msgid "Haftalik"
+#~ msgstr "Weekly"
+
+#~ msgid "Bog'lanish"
+#~ msgstr "Connection"
+
+#~ msgid "Biz bilan Bog'lanish"
+#~ msgstr "Contact us"
+
+#~ msgid "Manzil"
+#~ msgstr "Address"
+
+#~ msgid "Buxoro viloyati, Buxoro shahar, Namozgoh ko'chasi 29-uy"
+#~ msgstr "Bukhara region, Bukhara city, Namozgoh street, house 29"
+
+#~ msgid "2019 yil mukammal ta'mir"
+#~ msgstr "2019 major renovation"
+
+#~ msgid "Maktab binosi qurilgan yili"
+#~ msgstr "Year the school building was built"
+
+#~ msgid "Dastur asosida ta'mirlangan yili va turi"
+#~ msgstr "Year and type of repair based on the program"
+
+#~ msgid "Buxoro shahar 29-Idum haqida ma’lumot"
+#~ msgstr "Information about Bukhara city 29-Idum"
+
+#~ msgid "Telefon"
+#~ msgstr "Phone"
+
+#~ msgid "Email"
+#~ msgstr "Eamil"
+
+#~ msgid "Ismingiz"
+#~ msgstr "Name"
+
+#~ msgid "Emailingiz"
+#~ msgstr "Email"
+
+#~ msgid "Sarlavha"
+#~ msgstr "Title"
+
+#~ msgid "Xabar"
+#~ msgstr "Message"
+
+#~ msgid "Yuborish"
+#~ msgstr "Send"
+
+#~ msgid "Rahbariyati"
+#~ msgstr "Leadership"
+
+#~ msgid "Olimpiada"
+#~ msgstr "Olimpiada"
+
+#~ msgid "Natijalari"
+#~ msgstr "Results"
+
+#~ msgid "MATEMATIKA FANIGA IXTISOSLASHTIRILGAN"
+#~ msgstr "SPECIALIZED IN MATHEMATICS"
+
+#~ msgid "29-SONLI"
+#~ msgstr "NUMBER 29"
+
+#~ msgid "DAVLAT UMUMTA'LIM MAKTABI"
+#~ msgstr "PUBLIC COMMUNITY SCHOOL"
+
+#~ msgid "O'quv binolari"
+#~ msgstr "Educational buildings"
+
+#~ msgid "Pedagog xodimlar"
+#~ msgstr "Teaching staff"
+
+#~ msgid "Oliy va birinchi toifali pedagoglar"
+#~ msgstr "Higher and first-class teachers"
+
+#~ msgid "O'quvchilar"
+#~ msgstr "Students"
+
+#~ msgid "Kompyuter xonalari"
+#~ msgstr "Computer rooms"
+
+#~ msgid "Laboratoriya"
+#~ msgstr "Laboratory"
+
+#~ msgid "Bizning manzilimiz"
+#~ msgstr "Our address"
+
+#~ msgid "Xaritada"
+#~ msgstr "On the map"
+
+#~ msgid "Bino nechi qavatdan iborat"
+#~ msgstr "How many floors does the building have?"
+
+#~ msgid "Sinflar soni"
+#~ msgstr "Number of classes"
+
+#~ msgid "O‘qish nechi smenada"
+#~ msgstr "What shifts are you studying?"
+
+#~ msgid "Maktab nimaga ixtisoslashtirilgan"
+#~ msgstr "What does the school specialize in?"
+
+#~ msgid "Ixtisoslashtirilgan maktab (matematika faniga)"
+#~ msgstr "Specialized school (mathematics)"
+
+#~ msgid "O‘quvchi o‘rni (quvvati)"
+#~ msgstr "Student position (power)"
+
+#~ msgid "1176 o‘rinli"
+#~ msgstr "1176 seats"
+
+#~ msgid "Umumiy maydoni"
+#~ msgstr "Total area"
+
+#~ msgid "21993 kv.m"
+#~ msgstr "21993 square meters"
+
+#~ msgid "Manzili to‘liq"
+#~ msgstr "Full address"
+
+#~ msgid "Buxoro shahar, X.Olimjon MFY, Namozgoh ko‘chasi 29-uy"
+#~ msgstr "Bukhara city, Kh. Olimjon Medical University, 29 Namozgoh Street"
+
+#~ msgid "Direktor F.I.Sh lavozimga qachondan buyon"
+#~ msgstr "Since when did Director F.I.Sh take office?"
+
+#~ msgid "Ravshanova Gulchera Maxamatovna"
+#~ msgstr "Ravshanova Gulchera Makhamatovna"
+
+#~ msgid "2019 yil 20 avgustdan"
+#~ msgstr "From August 20, 2019"
+
+#~ msgid "Maktab haqida"
+#~ msgstr "About the school"
+
+#~ msgid "Yangiliklar"
+#~ msgstr "News"
+
+#~ msgid "Olimpiadalar"
+#~ msgstr "Olympiads"
+
+#~ msgid "Rahbariyat"
+#~ msgstr "Leadership"
+
+#~ msgid "O'qituvchilar faoliati"
+#~ msgstr "Teachers' activities"
+
+#~ msgid "Yo'nalishlar"
+#~ msgstr "Directions"
+
+#~ msgid "5 tashabbus"
+#~ msgstr "5 initiatives"
+
+#~ msgid "Eco school"
+#~ msgstr "Eco school"
+
+#~ msgid "Sport"
+#~ msgstr "Sport"
+
+#~ msgid "Maktab direktori"
+#~ msgstr "School Principal"
+
+#~ msgid "Ravshanova Gulchera Maxammatovna"
+#~ msgstr "Ravshanova Gulchera Makhammatovna"
+
+#~ msgid "O'quv-tarbiya Ishlari bo'yicha direktor o'rinbosari"
+#~ msgstr "Deputy Director for Educational Affairs"
+
+#~ msgid "Muyassarova Muharram Gulboyevna"
+#~ msgstr "Muyassarova Muharram Gulboyevna"
+
+#~ msgid "Ma'naviy-ma'rifiy ishlar bo'yicha direktor o'rinbosari"
+#~ msgstr "Deputy Director for Spiritual and Educational Affairs"
+
+#~ msgid "Hamdamova Nigora Olimovna"
+#~ msgstr "Hamdamova Nigora Olimovna"
+
+#~ msgid "Fan"
+#~ msgstr "Science"
+
+#~ msgid "O'qituvchi"
+#~ msgstr "Teacher"
+
+#~ msgid "O'quvchi"
+#~ msgstr "Student"
+
+#~ msgid "Sinf"
+#~ msgstr "Class"
+
+#~ msgid "O'rin"
+#~ msgstr "Place"
+
+#~ msgid "Ball"
+#~ msgstr "Score"

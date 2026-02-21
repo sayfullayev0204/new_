@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load i18n %}
+{% load static %}
+
+<head charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="{% static 'css/map.css' %}">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css" rel="stylesheet' %}">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+</head>
+
+<body class="index-page">
+<style>
+  .hero:before {
+    background-color: none;
+    background: none;
+  }
+</style>
+  {% include "header.html" %}
+
+  <main class="main">
+    <!-- Hero Section -->
+    <section id="hero" class="hero  dark" style="background-color: none;"><img src="{% static 'img/fon2.png' %}" alt="" class="hero-bg">
+
+      <div class="container">
+        <div class="row gy-4 justify-content-between">
+
+          <div class="col-lg-6  d-flex flex-column justify-content-center" >
+                        <img src="{% static 'img/person.png' %}" class="img-fluid" style="border-radius: 8px; max-height: 550px;">
+          </div>
+          <div class="col-lg-5 order-lg-last" data-aos="zoom-out" data-aos-delay="100" style="max-width: 100%px;">
+            <img src="{% static 'img/sher.png' %}" class="img-fluid animated" style="border-radius: 8px; max-height: 550px;">
+          </div>
+        </div>
+      </div>
+
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28 " preserveAspectRatio="none">
+
+      </svg>
+
+    </section>
+    <!-- /Hero Section -->
+     
+    <!-- Stats Section -->
+    <section id="stats" class="stats section light-background" style="background: url(/static/img/header1.png);">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 col-md-6">
+            <div class="stats-item text-center w-100 h-100" style="border-radius: 4px 4px 0 0; box-shadow: none;">
+
+              <h2 class="title">HOFIZ XORAZMIY HAYOTI VA IJODI</h2>
+              <p>
+
+                O‘zbek mumtoz adabiyotining yorqin vakillaridan biri, turkiy tilning badiiy imkoniyatlarini yuksak darajada namoyon eta olgan benazir shoir va mutafakkir Hofiz Xorazmiy XIV–XV asrlarda yashab ijod qilgan bo‘lib, o‘z davrining yetuk ma’rifatparvari, chuqur tafakkur sohibi va badiiy so‘zning mohir ustalaridan sanaladi. U turkiy she’riyat taraqqiyotida, ayniqsa g‘azal janrining shakllanishi va takomilida beqiyos o‘rin tutadi. Hofiz Xorazmiyning ijodiy salohiyati, badiiy-estetik qarashlari, didaktik-ta’limiy g‘oyalari va insoniylik, ezgulik, pok ishq haqidagi falsafiy talqinlari o‘zbek mumtoz adabiyoti taraqqiyotidagi muhim bosqichni tashkil qiladi.
+                Shoirning tug‘ilgan va vafot etgan yillari aniq ma’lum bo‘lmasa-da, Xorazm zaminida yetishib chiqqan bu san’atkorning adabiy merosi mazmuni, poetik uslubi hamda qo‘lyozmalar tarixi uning XV asr birinchi yarmida ijod qilgan yirik adiblar safidan munosib o‘rin egallaganini ko‘rsatadi. Hofiz Xorazmiyning shaxsi va ijodi haqida aniq biografik ma’lumotlar kamligi tadqiqotchilar uchun qator ilmiy izlanishlar olib borish zaruratini tug‘diradi. Shu jihatdan, shoir hayot yo‘li va ijodiy merosiga doir qo‘lyozmalarning aniqlanishi, tahlil qilinishi va ilmiy muomalaga kiritilishi adabiyotshunoslikda muhim ahamiyat kasb etadi.
+                Shoirning san’atkor sifatidagi asosiy o‘ziga xos jihati — turkiy tilda nozik badiiy ifoda imkoniyatlarini kengaytirgani, xalq tiliga yaqin so‘zlardan keng foydalangani, ayniqsa Xorazm shevasiga xos birliklardan samarali foydalanib, badiiy tilni tabiiy, jozibali va ravon holga keltirganidir. O‘z davrida ko‘p shoirlar arab-fors lug‘atiga suyanib ijod qilgan bo‘lsa, Hofiz Xorazmiy ana shu an’anani sintez etgan holda, turkiy she’riyatga o‘ziga xos yangi nafas olib kiradi. Uning asarlarida xalqona ruh, real hayot manzaralari, insoniy kechinmalar bilan uyg‘unlashgan falsafiy mushohadalar chuqur badiiy mahorat bilan talqin etiladi.
+                Hofiz Xorazmiy poetik merosi — “Devoni Hofiz ba zaboni turkiy” deb nomlangan yirik to‘plamdir. Mazkur devon 1975-yil 18-mayda Haydaroboddagi Salorjang muzeyining Sharq qo‘lyozmalari xazinasidan taniqli adabiyotshunos va matnshunos professor Hamid Sulaymonov tomonidan topilib, ilmiy adabiyot muomalasiga kiritildi. Devonning topilishi turkiy she’riyat va o‘zbek mumtoz adabiyoti tarixida beqiyos ilmiy voqelikka aylandi, chunki u Hofiz Xorazmiyning poetik merosini, uning ijodiy maktabi va adabiy dunyoqarashini mukammal o‘rganish imkonini berdi.
+                Devonda jami 37 mingdan ortiq misra, 18632 bayt hajmidagi she’riy meros jamlangan bo‘lib, uning tarkibidan:
+                9 qasida,
+                1 tarkibband,
+                3 tarji’band,
+                1 muxammas,
+                1 marsiya,
+                1052 g‘azal,
+                2 mustazod,
+                31 qit’a,
+                12 ruboiy o‘rin olgan(1-rasm).
+              </p>
+            </div>
+          </div><!-- End Stats Item -->
+          <div class="col-lg-6 col-md-6">
+            <div class="stats-item text-center w-100 h-100" style="border-radius: 4px 4px 0 0; box-shadow: none;">
+              <img src="{% static 'img/1-rasm.jpg' %}" class="img-fluid" style="border-radius: 8px; max-height: 550px;">
+              <p>1-Rasm</p>
+              <img src="{% static 'img/rasm22.png' %}" class="img-fluid" style="border-radius: 8px; max-height: 550px; margin-top: 20px;">
+              <p>2-Rasm</p>
+            </div>
+          </div><!-- End Stats Item -->
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-12 col-md-12">
+            <div class="stats-item text-center w-100 h-100" style="border-radius: 0 0 4px 4px; box-shadow: none;">
+              <p>
+                 Janrlarning bunday rang-barangligi shoirning badiiy imkoniyati naqadar keng bo‘lganini, mumtoz poeziyaning turli shakl va uslublarida yetuk ijod qila olganini tasdiqlaydi.
+                Shoirning g‘azallari falsafiy mushohada, ilohiy va ma’naviy poklanish g‘oyalari, sof ishq falsafasi, insoniylik, sadoqat, vafodorlik va ezgulikni ulug‘lovchi mazmun bilan sug‘orilgan. U sharqona oshiq-ma’shuq timsoliga yangicha poetik nafas bag‘ishlab, asosiy va ikkinchi darajali obrazlar tizimini badiiy jihatdan boyitib, uni falsafiy-gumanistik mazmun bilan to‘ldiradi. Hofiz Xorazmiyning obrazlar yaratish mahorati Sharq mumtoz adabiyoti an’analarini davom ettirgan holda, ularni yanada takomillashtirishga xizmat qilgan.
+                Hofiz Xorazmiyning hayot yo‘liga bag‘ishlab tuzilgan maxsus ilmiy xarita (2-rasm) shoir biografiyasining muhim manzillarini qayd etish bilan birga, devonning tarixiy shakllanish jarayoniga ham yorituvchi ko‘plab ma’lumotlarni o‘z ichiga oladi. Bu xarita shoirning yashagan hududlari, ijodiy muhit, qo‘lyozmaning tarqalish yo‘li va saqlanishi, shuningdek, shoirning adabiy maktabi shakllanishiga oid ilmiy xulosalar chiqarish imkonini beradi.
+                Xulosa qilib aytganda, Hofiz Xorazmiy — turkiy adabiy tafakkur tarixida alohida o‘rin tutuvchi, o‘zbek she’riyatining shakllanish va g‘oyaviy-badiiy yuksalish bosqichlariga sezilarli ta’sir ko‘rsatgan yirik shaxsdir. Uning ijodi o‘zbek mumtoz adabiyotining ma’naviy merosida bebaho boylik bo‘lib, zamonaviy adabiyotshunoslik, matnshunoslik va pedagogik-estetik tadqiqotlar uchun ham muhim manba sifatida qadrlanadi.
+
+
+              </p>
+            </div>
+          </div><!-- End Stats Item -->
+        </div>
+      </div>
+
+    </section><!-- /Stats Section -->
+
+  </main>
+
+  {% include "footer.html" %}
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+  <script src="{% static 'js/map.js' %}"></script>
+
+</body>
+
+</html>

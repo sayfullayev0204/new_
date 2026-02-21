@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load i18n %}
+{% load static %}
+
+<head charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="{% static 'css/map.css' %}">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css" rel="stylesheet' %}">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  {% include "header.html" %}
+  <style>
+    .hero-img img {
+      width: 100%;
+      max-width: 100%;  /* Ensures the image does not overflow */
+      height: auto;
+      transform: scale(1.2); /* Scales the image up */
+      transition: transform 0.3s ease-in-out; /* Adds a smooth transition */
+    }
+    
+    .hero-img img:hover {
+      transform: scale(1.3); /* Makes the image a bit bigger on hover */
+    }
+  </style>
+  <main class="main">
+    
+    <!-- About Section -->
+    <section id="about" class="about section" style="background-color: #f4f5fe; background: url(/static/img/header1.png); margin-top: 60px;">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>{% trans "Hofiz Xorazmiy" %}</h2>
+        <div><span>{% trans "Hikmatlar" %}</span></div>
+
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="gazallar">
+
+  <!-- [1] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 1 ⸺ ⸺⸎⸺</h3>
+    <p>Taajjub aylamangiz izdasam diyorimni,</p>
+    <p>Vatan chu jon erur, borcha jonini izdar.</p>
+    <p>Nechaki suvni olib bahrdin bulut ko‘kka</p>
+    <p>Yetursa, oqibat ul o‘z makonini izdar.</p>
+    <p>Baho guhar bila javhar tonar chnqib kondin,</p>
+    <p>Vale niyoz bila bahru konini izdar.</p>
+    <p>G‘arib shoh-i zamonning vaziri ham bo‘lsa,</p>
+    <p>Hamisha jon bila o‘z xonumoninn izdar.</p>
+    <p>Agarchi shoh-i zamon ilgigor nishiman-i boz,</p>
+    <p>Vale ko‘ngul bila boz oshyonini izdar.</p>
+  </div>
+
+  <!-- [2] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 2 ⸺ ⸺⸎⸺</h3>
+    <p>Kom-i jonni tilama, ey oqil,</p>
+    <p>Chun bu olamning ichra yo‘qdur kom.</p>
+    <p>Kom agar bo‘lsa erdi olamda,</p>
+    <p>Topg‘ay erdi tan ichra jon orom.</p>
+    <p>Besaranjom ko‘runur ishlar,</p>
+    <p>Chun ko‘runmas jahon ishinda nizom.</p>
+    <p>Oqidbat chun jahonda qolmasmiz,</p>
+    <p>Yaxshi uldurki, yaxshi qolsa nom.</p>
+  </div>
+
+  <!-- [3] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 3 ⸺ ⸺⸎⸺</h3>
+    <p>Necha san devsifat xalq ora yurugasan,</p>
+    <p>Kunj-i uzlatni talab aylavu xush inson bo‘l.</p>
+  </div>
+
+  <!-- [4] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 4 ⸺ ⸺⸎⸺</h3>
+    <p>Bu xasta dardini shaksiz o‘shul tabib bilur,</p>
+    <p>Muhabbat jarohatu ranjini chun habib bilur.</p>
+    <p>G‘ami bu xasta ko‘nguldin dame judo bo‘lmas,</p>
+    <p>G‘arib holini har holda g‘arib bilur.</p>
+  </div>
+
+  <!-- [5] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 5 ⸺ ⸺⸎⸺</h3>
+    <p>Kishini yaxshikim ul yor-i mehribon bilgay,</p>
+    <p>Aning bikin kishining qolmag‘ay nihon tilagi.</p>
+  </div>
+
+  <!-- [6] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 6 ⸺ ⸺⸎⸺</h3>
+    <p>Izdar ersang koru bor faqrmaskan bo‘lako‘r,</p>
+    <p>Bor miskinlarga chun haq hazratinda korubor.</p>
+    <p>Aylagil doim tavozu’ yaxshi ot izdar esang,</p>
+    <p>Kim tavozu’ pesha qilg‘anlar bo‘lubdur nomdor.</p>
+    <p>Mard-i ma’no ul erur qilsa tavozu’ borchag‘a,</p>
+    <p>Chun sarafkanda bo‘lur shoxeki, bo‘lur mevador.</p>
+  </div>
+
+  <!-- [7] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 7 ⸺ ⸺⸎⸺</h3>
+    <p>Tilar bo‘lsang, ey yor, pokiza siyrat,</p>
+    <p>Ki bo‘lsa sanga mulk-i ma’noda ravnaq,</p>
+    <p>Maqom-i fanoda bo‘lub, oqil o‘lg‘il,</p>
+    <p>Baqo munda izdamayu bo‘lma ahmaq.</p>
+    <p>Bu mim-i maniyni ketarsang o‘zungdin,</p>
+    <p>Ketar botilu ul zamonda qolur haq.</p>
+  </div>
+
+  <!-- [8] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 8 ⸺ ⸺⸎⸺</h3>
+    <p>Suvrat ichra gado-yi ishq bo‘lub,</p>
+    <p>Mulk-i ma’noda podsho bo‘lg‘il.</p>
+  </div>
+
+  <!-- [9] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 9 ⸺ ⸺⸎⸺</h3>
+    <p>Ma’shuq birla oshiq agar pok borsalar,</p>
+    <p>Nozu niyoz ikkisini sohib-i kamol etar.</p>
+  </div>
+
+  <!-- [10] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 10 ⸺ ⸺⸎⸺</h3>
+    <p>Hofiz kamol izdayu joidin kechib turur,</p>
+    <p>Kim jonidin kechmasa sohibkamol emas.</p>
+  </div>
+
+  <!-- [11] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 11 ⸺ ⸺⸎⸺</h3>
+    <p>Aql ila ishq hargiz tuz kelmadi bu yo‘lda,</p>
+    <p>Oshiq qoshinda sig‘mas chun zohid-i muvasvis.</p>
+  </div>
+
+  <!-- [12] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 12 ⸺ ⸺⸎⸺</h3>
+    <p>Aql birla ishqni bilmak erur amr-i mahol,</p>
+    <p>Tifl-i abjadxon erur bu yo‘lda aql-i pirimiz.</p>
+  </div>
+
+  <!-- [13] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 13 ⸺ ⸺⸎⸺</h3>
+    <p>Ne turlu tarbiyate ishqning yo‘lindakim, alar.</p>
+    <p>O‘shul nigor elindin javr ila jafog‘a yetishmas.</p>
+  </div>
+
+  <!-- [14] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 14 ⸺ ⸺⸎⸺</h3>
+    <p>Xalqdin ne jafo sanga tegsa,</p>
+    <p>Orif ersang ko‘ngulni tang etma.</p>
+    <p>Ohutak bo‘lmoq izdasang mushkin,</p>
+    <p>Kibr ila o‘zungni palang etma.</p>
+    <p>Barcha sulh etmagin tilar bo‘lsang,</p>
+    <p>Xalqdin xashm eyu jang etma.</p>
+  </div>
+
+  <!-- [15] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 15 ⸺ ⸺⸎⸺</h3>
+    <p>Ketarsang bu movumaniyni o‘zungdin,</p>
+    <p>Ko‘rungay sanga ul zamon ma’no-yi haq.</p>
+    <p>Agar oqil ersang bu so‘zni eshitkil</p>
+    <p>Kim, eshitmadi haq so‘zin hech ahmaq.</p>
+  </div>
+
+  <!-- [16] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 16 ⸺ ⸺⸎⸺</h3>
+    <p>Bo‘lay bu nafsdin kizlay taqi uyla chiqa bilsang,</p>
+    <p>Baqo yuzini ko‘rguzgay o‘shul dam rahbar-i olo.</p>
+  </div>
+
+  <!-- [17] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 17 ⸺ ⸺⸎⸺</h3>
+    <p>Da’vo-yi muhabbat qilu nafy ayla o‘zungni,</p>
+    <p>Bu da’vo chu ma’noda bo‘lur nafy-i ila isbot.</p>
+  </div>
+
+  <!-- [18] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 18 ⸺ ⸺⸎⸺</h3>
+    <p>Dilbar sanga yor erur, san yor bo‘la ko‘rgil,</p>
+    <p>G‘aflat bila mast o‘lma, hushyor bo‘la ko‘rgil.</p>
+  </div>
+
+  <!-- [19] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 19 ⸺ ⸺⸎⸺</h3>
+    <p>Joning bila gar yori muvofiq tilar ersang,</p>
+    <p>Asl ila muxolif bo‘lu ishq ila muvofiq.</p>
+  </div>
+
+  <!-- [20] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 20 ⸺ ⸺⸎⸺</h3>
+    <p>Suvrat-i faqru fanoda topa bilgan ishqin,</p>
+    <p>Shohdur ma’no bila ul kishi, darvesh ermas.</p>
+  </div>
+
+  <!-- [21] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 21 ⸺ ⸺⸎⸺</h3>
+    <p>Haq yor, yor birla to‘ludur jahon, vale</p>
+    <p>Haqdin safovu diyda-yi diydorbin tila.</p>
+  </div>
+
+  <!-- [22] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 22 ⸺ ⸺⸎⸺</h3>
+    <p>Bo‘lmasa ishing kifoyat aql birla hushdin,</p>
+    <p>Boda-yi ishqin ichib o‘zungni behush aylagil.</p>
+  </div>
+
+  <!-- [23] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 23 ⸺ ⸺⸎⸺</h3>
+    <p>Bilgasiz holni bu so‘zlardin,</p>
+    <p>Ishq chun tarjimon-i oshnq erur.</p>
+  </div>
+
+  <!-- [24] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 24 ⸺ ⸺⸎⸺</h3>
+    <p>Yuzi mehriga jon bo‘lg‘ali oshiq,</p>
+    <p>Muhabbat so‘zidur chun subh-i sodiq.</p>
+  </div>
+
+  <!-- [25] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 25 ⸺ ⸺⸎⸺</h3>
+    <p>Bu olam ichinda manga ul yor topulmas,</p>
+    <p>G‘am birla o‘ladurmanu g‘amxor topulmas.</p>
+  </div>
+
+  <!-- [26] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 26 ⸺ ⸺⸎⸺</h3>
+    <p>Jamoli holini ahli kamol bildi taqi,</p>
+    <p>Gumonda bo‘lma ko‘ngul ichra bor hol-i jamol.</p>
+  </div>
+
+  <!-- [27] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 27 ⸺ ⸺⸎⸺</h3>
+    <p>Fano yo‘ling‘a qachon ishq ila qadam bossang,</p>
+    <p>Falakni xoksifat anda rom ko‘rgaysan.</p>
+  </div>
+
+  <!-- [28] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 28 ⸺ ⸺⸎⸺</h3>
+    <p>Ulki yuzi gulistonimdur manim,</p>
+    <p>Qomati sarv-i ravonimdur manim.</p>
+    <p>Yuzi mehrindin ko‘ngul ravshan erur,</p>
+    <p>Yuzi moh-i osmonimdur manim.</p>
+  </div>
+
+  <!-- [29] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 29 ⸺ ⸺⸎⸺</h3>
+    <p>Shukr lillohkim, o‘shul jonu jahonni ko‘rdum,</p>
+    <p>Qarshuda ma’no bila suvrat-i jonni ko‘rdum.</p>
+    <p>Ko‘nglum oldurub elimdin yurur erdim nogah,</p>
+    <p>Kim o‘shul jon tilagi, ko‘nglum olonna ko‘rdum.</p>
+  </div>
+
+  <!-- [30] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 30 ⸺ ⸺⸎⸺</h3>
+    <p>Ishq-i boqiy birla foniydin kecha bilsang tamom,</p>
+    <p>Ko‘rgasan ul hol ichinda qatra-yi daryo-yi ishq.</p>
+    <p>Gar sarafroz-i jahon bo‘lmoq tilar bo‘lsang mudom,</p>
+    <p>Jon bila bo‘lg‘il bu yo‘lning ichra xok-i po-yi ishq.</p>
+  </div>
+
+  <!-- [31] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 31 ⸺ ⸺⸎⸺</h3>
+    <p>Qaroru sabr bu xasta ko‘ngulda qolmadi, lekin</p>
+    <p>Muhabbatu g‘am-i ishq anda bo‘ldi asri ziyodat.</p>
+  </div>
+
+  <!-- [32] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 32 ⸺ ⸺⸎⸺</h3>
+    <p>Ishqning yo‘lida fano bo‘ldum,</p>
+    <p>Sig‘madi munda chun saru dastor.</p>
+  </div>
+
+  <!-- [33] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 33 ⸺ ⸺⸎⸺</h3>
+    <p>Sozu vaslin izdayu jon udtak doyim yonar</p>
+    <p>Kim, bila olg‘aysa bu ne so‘zu ul ne soz erur.</p>
+  </div>
+
+  <!-- [34] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 34 ⸺ ⸺⸎⸺</h3>
+    <p>Dard-i hijronni nasib aylading ersa jong‘a,</p>
+    <p>Vasldin ayla davo chun anga darmonsan san.</p>
+  </div>
+
+  <!-- [35] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 35 ⸺ ⸺⸎⸺</h3>
+    <p>Ko‘ngil murodi bukim bo‘lsa pokboz, ey do‘st,</p>
+    <p>Vafo yo‘linda taqi qilsa bir niyoz, ey do‘st.</p>
+  </div>
+
+  <!-- [36] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 36 ⸺ ⸺⸎⸺</h3>
+    <p>Ko‘zni yumsang jam’-i ashyodin,</p>
+    <p>Ko‘runur erdi ma’no-yi ashyo.</p>
+    <p>O‘z-o‘zungdin tamom mahv o‘lsang.</p>
+    <p>Ochilur erdi sanda sirr-i xudo.</p>
+  </div>
+
+  <!-- [37] -->
+  <div class="gazal">
+    <h3>⸺⸎⸺ ⸺ 37 ⸺ ⸺⸎⸺</h3>
+    <p>Boshg‘ara bilmadi nomard muhabbat yo‘lini,</p>
+    <p>Ishq yo‘lin chu bosharmag‘a kerak mard-i mard.</p>
+  </div>
+
+</div>
+      </div>
+      
+<style>
+  .gazallar .gazal {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  border-left: 4px solid #8b5cf6;
+  background-color: #f9f5ff;
+  border-radius: 8px;
+}
+
+.gazallar h3 {
+  margin-top: 0;
+  color: #6d28d9;
+  font-size: 1.25rem;
+}
+
+.gazallar p {
+  margin: 0.6rem 0;
+  line-height: 1.7;
+  font-family: 'Traditional Uzbek serif', Georgia, serif; /* yoki o'zingizning shrift */
+}
+</style>
+    </section><!-- /About Section -->
+
+
+  </main>
+
+  {% include "footer.html" %}
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+  <script src="{% static 'js/map.js' %}"></script>
+
+</body>
+
+</html>

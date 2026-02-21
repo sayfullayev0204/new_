@@ -1,0 +1,104 @@
+{% load i18n %}
+{% load static %}
+<head charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <title>Hofiz Xorazmiy</title>
+  <link rel="icon" href="/static/img/person.png" type="png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="{% static 'css/map.css' %}">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css" rel="stylesheet' %}">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+</head>
+<header id="header" class="header align-items-center fixed-top" style="background-color: #08005eb5;">
+
+  <div class="message-container">
+      {% if messages %}
+      {% for message in messages %}
+      <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+          {{ message }}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      {% endfor %}
+      {% endif %}
+
+  </div>
+  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+    <a href="{% url 'home' %}" class="logo d-flex align-items-center">
+      <h1 class="sitename" style="font-size: 28px; color: #fdd983;"><span></span> </h1>
+    </a>
+
+    <nav class="navmenu">
+      <ul>
+        <li class="action"><a href="{% url 'home' %}">{% trans "Bosh sahifa" %}</a></li>
+
+        <li><a href="{% url 'devon' %}">{% trans "Devon va nashrlar" %}</a></li>
+        <li class="dropdown"><a href="#"><span>{% trans "Saralangan she'rlar" %}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul class="start-50">
+            {% for i in categories %}
+            <li><a href="{% url 'yunalish_list' i.pk %}">{{i.name}}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+        <li><a href="{% url 'news' %}">{% trans "Hikmatlar" %}</a></li>
+        <li><a href="{% url 'olimpiada' %}">{% trans "Tadqiqotchining ilmiy ishlari" %}</a></li>
+        <li><a href="{% url 'leadership' %}">{% trans "Sayt ko'zgusi" %}</a></li>
+        
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
+    </nav>
+
+        <!-- Til sozlanmalari chap tarafda -->
+    <div class="language-settings">
+      <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 10px;">
+        <!-- Ruscha til uchun -->
+        <li>
+          <form action="{% url 'set_language' %}" method="post" style="display: inline;">
+            {% csrf_token %}
+            <input type="hidden" name="language" value="ru">
+            <button type="submit" style="background: none; border: none; padding: 0; cursor: pointer; display: flex; align-items: center;">
+              <img src="{% static 'img/ru.png' %}" style="max-width: 30px;" alt="">
+            </button>
+          </form>
+        </li>
+        <!-- Inglizcha til uchun -->
+        <li>
+          <form action="{% url 'set_language' %}" method="post" style="display: inline;">
+            {% csrf_token %}
+            <input type="hidden" name="language" value="en">
+            <button type="submit" style="background: none; border: none; padding: 0; cursor: pointer; display: flex; align-items: center;">
+              <img src="{% static 'img/en.png' %}" style="max-width: 30px;" alt="">
+            </button>
+          </form>
+        </li>
+        <!-- O'zbekcha til uchun -->
+        <li>
+          <form action="{% url 'set_language' %}" method="post" style="display: inline;">
+            {% csrf_token %}
+            <input type="hidden" name="language" value="uz">
+            <button type="submit" style="background: none; border: none; padding: 0; cursor: pointer; display: flex; align-items: center;">
+              <img src="{% static 'img/uz.png' %}" style="max-width: 30px;" alt="">
+            </button>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+</header>

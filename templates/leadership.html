@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="uz">
+{% load i18n %}
+{% load static %}
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="{% static 'css/map.css' %}">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+
+  <style>
+    .hero-img img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      transform: scale(1.2);
+      transition: transform 0.3s ease-in-out;
+    }
+    .hero-img img:hover {
+      transform: scale(1.3);
+    }
+    .team-section {
+      background: linear-gradient(135deg, #e0f7fa 0%, #f3e5f5 100%);
+      color: #333;
+      padding: 60px 0;
+    }
+    .team-card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .team-card:hover {
+      transform: translateY(-10px);
+    }
+    .team-img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      max-height: 480px;
+    }
+    .team-content {
+      padding: 30px;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  {% include "header.html" %}
+
+  <main class="main">
+
+    <!-- About Section -->
+    <section id="about" class="about section" style="background: url({% static 'img/header1.png' %}) no-repeat center center / cover;">
+      <div class="container section-title" data-aos="fade-up" style="margin-top: 60px;">
+        <h2>{% trans "Hofiz Xorazmiy" %}</h2>
+        <div><span>{% trans "Sayt ko'zgusi" %}</span></div>
+      </div>
+
+      <!-- Jamoa va loyiha haqida -->
+      <div class="team-section">
+        <div class="container">
+
+          <!-- Asosiy matn (loyihani kim yaratgan) -->
+          <div class="row justify-content-center mb-5" data-aos="fade-up">
+            <div class="col-lg-10 text-center">
+              <h3 class="fw-bold mb-4">“Hofiz Xorazmiy didaktik merosi” veb-sayti haqida</h3>
+              <p class="lead fs-5">
+                Mazkur veb-sayt Urganch davlat pedagogika instituti mustaqil tadqiqotchisi 
+                <strong>Kurbanova Shukurjon Yeldashbayevna</strong> tomonidan 
+                13.00.01 — “Pedagogika nazariyasi. Pedagogik ta’limotlar tarixi” ixtisosligi bo‘yicha 
+                “Hofiz Xorazmiyning shaxs kamolotiga oid didaktik qarashlaridan foydalanishning pedagogik shart-sharoitlari” 
+                mavzusida pedagogika fanlari bo‘yicha falsafa doktori (PhD) ilmiy darajasini olish uchun 
+                tayyorlangan dissertatsiya tadqiqoti doirasida ishlab chiqilgan.
+              </p>
+              <p class="mt-4 fs-5">
+                Ushbu loyiha Hofiz Xorazmiyning didaktik merosini o'rganish, targ'ib qilish va zamonaviy pedagogikada qo'llash maqsadida yaratilgan.
+              </p>
+            </div>
+          </div>
+
+          <!-- Jamoa a'zolari -->
+          <div class="row gy-5">
+
+            <!-- 4. Muallif (agar alohida ko'rsatmoqchi bo'lsangiz) -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="team-card">
+                <img src="{% static 'img/muallif.png' %}" class="team-img" alt="Kurbanova Shukurjon Yeldashbayevna">
+                <div class="team-content">
+                  <h4 class="fw-bold">Kurbanova Shukurjon Yeldashbayevna</h4>
+                  <p class="text-muted">Urganch davlat pedagogika instituti mustaqil izlanuvchisi shukurjonyeldashbayevna@gmail.com ORCID: 0009-0006-3301-0776</p>
+                </div>
+              </div>
+            </div>
+            <!-- 1. Ilmiy rahbar -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="team-card">
+                <img src="{% static 'img/nomzod.png' %}" class="team-img" alt="Sulaymonov Mo‘minjon Yusubjonovich">
+                <div class="team-content">
+                  <h4 class="fw-bold">Sulaymonov Mo‘minjon Yusubjonovich</h4>
+                  <p class="text-muted">Filologiya fanlari nomzodi, dotsent</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Texnik maslahatchi -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="team-card">
+                <img src="{% static 'img/magister.png' %}" class="team-img" alt="Xudayberganova Gulnora To‘xtabayevna">
+                <div class="team-content">
+                  <h4 class="fw-bold">Xudayberganova Gulnora To‘xtabayevna</h4>
+                  <p class="text-muted">Loyihaning texnik maslahatchisi</p>
+                  <p class="mt-3">
+                    Osiyo Xalqaro Universiteti, “Ta’limda axborot texnologiyalari” (70610105) yo‘nalishi magistranti.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Dizayn maslahatchisi -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="team-card">
+                <img src="{% static 'img/dilmurod.png' %}" class="team-img" alt="Xudayberganov Dilmurod Tuxtabayevich">
+                <div class="team-content">
+                  <h4 class="fw-bold">Xudayberganov Dilmurod Tuxtabayevich</h4>
+                  <p class="text-muted">Dizayn ishlari maslahatchisi</p>
+                  <p class="mt-3">
+                    Osiyo Xalqaro Universiteti, “Pedagogika” (70110102) mutaxassisligi bo‘yicha magistrant.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /About Section -->
+
+  </main>
+
+  {% include "footer.html" %}
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+  <script src="{% static 'js/map.js' %}"></script>
+
+</body>
+</html>

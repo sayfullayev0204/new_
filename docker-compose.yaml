@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    command: gunicorn --bind 0.0.0.0:8000 config.wsgi:application
+    volumes:
+      - .:/app               # kodni real-time sinxron qilish uchun (developmentda yaxshi)
+      - static_volume:/app/staticfiles
+      - sqlite_data:/app     # SQLite faylini saqlab qolish uchun (muhim!)
+    ports:
+      - "8001:8000"          # tashqi 8001 → ichki 8000 (hozircha test uchun)
+    restart: unless-stopped
+    env_file:
+      - .env                 # agar .env faylingiz bo'lsa
+
+volumes:
+  static_volume:
+  sqlite_data:               # SQLite db fayli shu volume ichida saqlanadi

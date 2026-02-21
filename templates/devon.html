@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load i18n %}
+{% load static %}
+
+<head charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="{% static 'css/map.css' %}">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css" rel="stylesheet' %}">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  {% include "header.html" %}
+  <style>
+    .hero-img img {
+      width: 100%;
+      max-width: 100%;  /* Ensures the image does not overflow */
+      height: auto;
+      transform: scale(1.2); /* Scales the image up */
+      transition: transform 0.3s ease-in-out; /* Adds a smooth transition */
+    }
+    
+    .hero-img img:hover {
+      transform: scale(1.3); /* Makes the image a bit bigger on hover */
+    }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+      background: white;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);   /* Asosiy: har qatorda 3 ta */
+      gap: 20px;                               /* rasmlar orasidagi masofa kattaroq */
+    }
+
+    .hero-img {
+      width: 100%;
+      height: auto;                            /* bo'yi avtomatik, original nisbat saqlanadi */
+      max-height: none;                        /* cheklov yo'q */
+      border-radius: 10px;
+      object-fit: contain;                     /* rasm to'liq ko'rinadi, kesilmaydi */
+      display: block;
+      background-color: #f0f0f0;               /* agar rasm orqa fonida bo'sh joy chiqsa */
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .hero-img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .gallery {
+        grid-template-columns: repeat(3, 1fr);   /* Planshet: hali ham 3 ta */
+      }
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);   /* Katta telefon / kichik planshet: 2 ta */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery {
+        grid-template-columns: 1fr;              /* Juda kichik ekran: 1 ta */
+      }
+      
+      .card-body {
+        padding: 12px;
+      }
+      
+      .hero-img {
+        border-radius: 8px;
+      }
+    }
+  </style>
+  <main class="main">
+
+    <!-- About Section -->
+    <section id="about" class="about section" style="background-color: #f4f5fe; background: url(/static/img/header1.png);">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-xl-center gy-5">
+          <h1 style="font-weight: bold;">{% trans "Hofiz Xorazmiy — Devon va boshqa nashrlar" %}</h1>
+        </div>  
+      </div>
+      <div class="container mt-5">
+        <div class="card shadow">
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nashr nomi</th>
+                            <th>Ma'lumotlar</th>
+                            <th>Veb-manzil</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="book-title">Hofiz Xorazmiy. Devon. II tomlik. 1-kitob.</td>
+                            <td>- T.: O‘zKPMK, 1981. - 304 b.</td>
+                            <td>
+                                <a href="https://archive.org/details/DevonI-HofizXorazmiy/mode/2up" target="_blank">Internet Archive (to'liq ko'rish)</a><br>
+                                <a href="https://ia600905.us.archive.org/BookReader/BookReaderImages.php?zip=/30/items/DevonI-HofizXorazmiy/Hofiz%20Xorazmiy.%20Devon.%201-kitob_jp2.zip&file=Hofiz%20Xorazmiy.%20Devon.%201-kitob_jp2/Hofiz%20Xorazmiy.%20Devon.%201-kitob_0000.jp2&id=DevonI-HofizXorazmiy&scale=4&rotate=0" target="_blank">BookReader (rasmlar)</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="book-title">Hofiz Xorazmiy. Devon. II tomlik. 2-kitob.</td>
+                            <td>- T.: O‘zKPMK, 1981. - 312 b.</td>
+                            <td>
+                                <a href="https://archive.org/details/DevonII-HofizXorazmiy" target="_blank">Internet Archive</a><br>
+                                <a href="https://ia601204.us.archive.org/BookReader/BookReaderImages.php?zip=/34/items/DevonII-HofizXorazmiy/Hofiz%20Xorazmiy.%20Devon.%202-kitob_jp2.zip&file=Hofiz%20Xorazmiy.%20Devon.%202-kitob_jp2/Hofiz%20Xorazmiy.%20Devon.%202-kitob_0000.jp2&id=DevonII-HofizXorazmiy&scale=4&rotate=0" target="_blank">BookReader (rasmlar)</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="book-title">Hofiz Xorazmiy she’riyatidan.</td>
+                            <td>- T.: O‘zKPMK, 1980. - 123 b.</td>
+                            <td>
+                                <a href="https://archive.org/details/HofizXorazmiySheriyatidan" target="_blank">Internet Archive</a><br>
+                                <a href="https://akbt.urdu.uz/uz/books/14598" target="_blank">AKBT sayti</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="book-title">Хорезми Хафиз избранное. Пер. С. Иванов.</td>
+                            <td>– Т.: ЦК Ком. Уз., 1981. - 144 b.</td>
+                            <td>
+                                <a href="http://qr-ebook.uz/file/read/145ac4a5-ed9f-4c0b-953a-5ccb311c6a7e.pdf" target="_blank">PDF yuklab olish</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="book-title">Hârezmli Hâfız’ın Divanı (İnceleme-Metin-Tıpkıbasım).</td>
+                            <td>– Ankara: Türk Dil Kurumu Yayınları, 1998. – 1361 s. Toparlı, Recep.</td>
+                            <td>
+                                <a href="https://www.nadirkitap.com/h-rezmli-h-fiz-in-divani-inceleme-metin-tipkibasim-kitap4603494.html?srsltid=AfmBOorwYyhA0X61bl9LKk7OBKNYZMEnKTVjxFnc-WxMUZRfU-eiqf00" target="_blank">NadirKitap</a><br>
+                                <a href="https://www.siyasalkitap.com/harezmli-hafizin-divani" target="_blank">Siyasal Kitap</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="book-title">Хафиз Хорезми (жизнь и творчество). Муминджон Юсубджонович Сулеймонов</td>
+                            <td></td>
+                            <td>
+                                <a href="https://www.amazon.ae/%D0%A5%D0%B0%D1%84%D0%B8%D0%B7-%D0%A5%D0%BE%D1%80%D0%B5%D0%B7%D0%BC%D0%B8-%D0%B6%D0%B8%D0%B7%D0%BD%D1%8C-%D1%82%D0%B2%D0%BE%D1%80%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE-%D0%BF%D0%BE%D0%BA%D0%BB%D0%BE%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9/dp/6202676612" target="_blank">Amazon.ae</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="book-title">Images of lover and beloved in the creation of Hafiz Khorazmi: Monography. Kurbanova Shukurjon Yeldashbayevna</td>
+                            <td></td>
+                            <td>
+                                <a href="https://www.amazon.com.au/Images-lover-beloved-creation-Khorazmi/dp/6207472063" target="_blank">Amazon.com.au</a><br>
+                                <a href="https://www.amazon.co.jp/-/en/Images-lover-beloved-creation-Khorazmi/dp/6207472063?asin=6207472063&revisionId=&format=4&depth=1" target="_blank">Amazon Japan</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="book-title">Shayx Kamol Xo‘jandiy va xorazmlik Hofiz.</td>
+                            <td>– T.: Intellekt, 2023. - 54 b. Sherxon Qorayev.</td>
+                            <td>
+                                <a href="https://kitobxon.com/oz/kitob/shayh-kamol-hojandiy-va-horazmlik-hofiz" target="_blank">Kitobxon.com</a><br>
+                                <a href="https://kitobsevar.uz/kxpv/xrpt_hbcaf92pirjss3e2rm1g72a19a2p8gzfh3fn1760ner88vyn0nv7evvdvmuttjz3b5f32b2egic.pdf" target="_blank">PDF (Kitobsevar)</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="book-title">Hofiz Xorazmiyning didaktik qarashlari va uning pedagogik ahamiyati.</td>
+                            <td>- Urganch: Quvanchbek-Mashxura, 2025. - 36 b. Kurbanova Shukurjon Yeldashbayevna</td>
+                            <td>
+                                <a href="https://www.academia.edu/144124778/Hofiz_Xorazmiyning_didaktik_qarashlari_va_uning_pedagogik_ahamiyati" target="_blank">Academia.edu</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+      </div>
+      <br>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-xl-center gy-5">
+          <h1 style="font-weight: bold;">{% trans "Nashirlar" %}</h1>
+        </div>  
+      </div>
+      <div class="container mt-5">
+  <div class="card shadow">
+    <div class="card-body">
+      <!-- Rasmlarni grid ichiga o'tkazdim -->
+      <div class="gallery">
+        <img src="{% static 'img/01.jpg' %}" class="hero-img" alt="Devon 1">
+        <img src="{% static 'img/02.jpg' %}" class="hero-img" alt="Devon 2">
+        <img src="{% static 'img/03.jpg' %}" class="hero-img" alt="Devon 3">
+        <img src="{% static 'img/04.jpg' %}" class="hero-img" alt="Devon 4">
+        <img src="{% static 'img/05.jpg' %}" class="hero-img" alt="Devon 5">
+        <img src="{% static 'img/06.jpg' %}" class="hero-img" alt="Devon 6">
+        <img src="{% static 'img/07.jpg' %}" class="hero-img" alt="Devon 7">
+        <img src="{% static 'img/08.jpg' %}" class="hero-img" alt="Devon 8">
+      </div>
+    </div>
+  </div>
+</div>
+
+    </section><!-- /About Section -->
+
+  </main>
+
+  {% include "footer.html" %}
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+  <script src="{% static 'js/map.js' %}"></script>
+
+</body>
+
+</html>
