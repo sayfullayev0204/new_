@@ -56,12 +56,65 @@
                 padding: 0.5rem;
             }
         }
-  </style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 30px;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 14px 16px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        th {
+            background-color: #34495e;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9fbfc;
+        }
+        tr:hover {
+            background-color: #eef5ff;
+        }
+        .center {
+            text-align: center;
+            width: 60px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #004080;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1.05em;
+        }
+    </style>
   <main class="main">
 
     <!-- About Section -->
     <section id="about" class="about section" style="background-color: #f4f5fe; background: url(/static/img/header1.png);">
-      <div class="container section-title" data-aos="fade-up" style="margin-top: 60px;">
+      <div class="container section-title" data-aos="fade-up" style="margin-top: 60px; margin-bottom: -100px;">
         <h2>{% trans "Hofiz Xorazmiy" %}</h2>
         <div><span>{% trans "Ilmiy ishlar" %}</span></div>
 
@@ -73,13 +126,228 @@
     </section><!-- /About Section -->
     <section style="background-color: #f4f5fe; background: url(/static/img/header1.png); margin-top: -60px;">
         <div class="container table-container" >
-        <h1 class="title"><a href="https://independent.academia.edu/Shukurjon_Yeldashbayevna" target="_blank">Manba <img style="max-width: 30px;" src="https://www.svgrepo.com/show/95540/left-arrow.svg" alt=""></a></h1>
+            <table>
+        <thead>
+            <tr>
+                <th class="center">№</th>
+                <th>Nomi</th>
+                <th>Ko‘rish</th>
+                <th>Yuklab olish</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="center">01</td>
+                <td>Hofiz Xorazmiyning she’riy merosini o‘rganishning ahamiyati</td>
+                <td><a href="https://conferences.uz/plugins/themes/bootstrap3/pdf/conf_37_2022/8.Adabiyot_3_qism.pdf" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/01_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">02</td>
+                <td>Hofiz Xorazmiy lirikasida oshiq obrazining ifodalanishi</td>
+                <td><a href="https://www.academia.edu/127859860/Maqola_Hofiz_Xorazmiy_lirikasida_oshiq_obrazining_ifodalanishi" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/02_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">03</td>
+                <td>Hofiz Xorazmiy – devonnavis ijodkor</td>
+                <td><a href="https://www.academia.edu/127859864/Tezis_Hofiz_Xorazmiy_devonnavis_ijodkor" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/03_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">04</td>
+                <td>Hofiz Xorazmiy devondagi asosiy va ikkinchi darajali obrazlar</td>
+                <td><a href="https://www.academia.edu/127859867/_Uchinchi_Renessansda_ilmiy_amaliy_tadqiqotlarning_dolzarb_muammolari_mavzusidagi_Respublika_ilmiy_amaliy_onlayn_konferensiyasi_MATERIALLARI" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/04_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">05</td>
+                <td>Hofiz Xorazmiy va Alisher Navoiy ijodiy merosidagi mushtaraklik</td>
+                <td><a href="https://www.academia.edu/127859876/Maqola_Hofiz_Xorazmiy_va_Alisher_Navoiy_ijodiy_merosidagi_mushtaraklik" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/05_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">06</td>
+                <td>Hofiz Xorazmiy ijodida shaxs kamolotini belgilovchi fazilatlar</td>
+                <td><a href="https://www.ijournal.uz/index.php/jartes/article/view/896" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/06_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">07</td>
+                <td>Hofiz Xorazmiy didaktik qarashlarini o‘rganishning hozirgi holati</td>
+                <td><a href="https://www.researchgate.net/publication/383616950_HOFIZ_XORAZMIY_DIDAKTIK_QARASHLARINI_O‘RGANISHNING_HOZIRGI_HOLATITHE_CURRENT_STATE_OF_THE_STUDY_OF_HAFIZ_KHORAZMI'S_DIDACTIC_VIEWS" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/07_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">08</td>
+                <td>Hofiz Xorazmiyning shaxsi va uning ijodi</td>
+                <td><a href="https://www.oriens.uz/media/journalarticles/44_Kurbanova_Shukurjon_Yeldashbayevna_309-313.pdf" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/08_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">09</td>
+                <td>Hofiz Xorazmiyning ijodiy merosining ma’rifiy-didaktik ahamiyati</td>
+                <td><a href="https://www.academia.edu/127859890/Maqola_Hofiz_Xorazmiyning_ijodiy_merosining_ma_rifiy_didaktik_ahamiyati" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/09_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">10</td>
+                <td>Oliy ta’lim tizimida Hofiz Xorazmiy ijodiy merosini o‘rganishning ahamiyati va bugungi holati</td>
+                <td><a href="https://theusajournals.com/index.php/ijp/article/view/4006" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/010_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">11</td>
+                <td>Oshiq va ma’shuqning ma’naviy kamoloti (Hofiz Xorazmiy ijodida)</td>
+                <td><a href="https://theusajournals.com/index.php/ajsshr/article/view/4084" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/011_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Hofiz Xorazmiyning ijodiy merosi va uning tarbiyaviy asoslari</td>
+                <td><a href="https://zenodo.org/doi/10.5281/zenodo.14624324" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/012_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">13</td>
+                <td>Orif va boshqa obrazlarida aks etgan axloqiy tarbiyaga oid fikrlarning badiiy ifodasi (Hofiz Xorazmiy ijodi misolida)</td>
+                <td><a href="https://www.academia.edu/127859906/_ERKIN_VOHIDOV_IJODIY_MEROSI_VA_TURKIY_ADABIYOT_MASALALARI_mavzusidagi_xalqaro_ilmiy_amaliy_anjuman_materiallari" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/013_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">14</td>
+                <td>Badiiy qarashlardan foydalanishning pedagogik ahamiyati</td>
+                <td><a href="https://oriens.uz/journal/article/badiiy-qarashlardan-foydalanishning-pedagogik-ahamiyati-hofiz-xorazmiy-ijodi-misolida/" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/014_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">15</td>
+                <td>Hofiz Xorazmiy ijodida oshiq va ma’shuq obrazlari: Monografiya</td>
+                <td><a href="https://www.amazon.com.au/Images-lover-beloved-creation-Khorazmi/dp/6207472063" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/015_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">16</td>
+                <td>Hofiz Xorazmiyning shaxs ma’rifiy-axloqiy kamolotiga oid qarashlarining ta’lim samaradorligini oshirishdagi o‘rni</td>
+                <td><a href="http://ilmsarchashmalari.uz/user-media/issues_files/2025-2.pdf" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/016_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">17</td>
+                <td>Hofiz Xorazmiy didaktikasida shaxs kamoloti va axloqiy masalalar</td>
+                <td><a href="https://masterjournals.com/index.php/crjp/article/view/2052/1858" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/017_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">18</td>
+                <td>Hofiz Xorazmiy qit’alarida aks etgan axloqiy tarbiyaga oid fikrlar</td>
+                <td><a href="https://www.academia.edu/129066987/Hofiz_Xorazmiy_qit_alarida_aks_etgan_axloqiy_tarbiyaga_oid_fikrlar" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/018_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">19</td>
+                <td>Hofiz Xorazmiy didaktik qarashlari asosida yoshlarning ijodiy tafakkurni rivojlantirish imkoniyatlari</td>
+                <td><a href="https://www.academia.edu/129221506/Hofiz_Xorazmiy_didaktik_qarashlari_asosida_yoshlarning_ijodiy_tafakkurni_rivojlantirish_imkoniyatlari" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/019_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">20</td>
+                <td>Hofiz Xorazmiy lirikasida shaxs kamoloti: badiiy tahlil va didaktik talqin</td>
+                <td><a href="https://scientific-jl.com/conf/article/view/21263" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/020_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">21</td>
+                <td>Hofiz Xorazmiy merosining pedagogik talqini va Hamid Sulaymon ilmiy izlanishlarining ta’limdagi o‘rni</td>
+                <td><a href="https://interspp.com/index.php/ifq/article/view/3223" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/021_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">22</td>
+                <td>Hofiz Xorazmiy lirikasida oshiq-ma’shuq obrazlari orqali ifodalangan shaxs kamoloti</td>
+                <td><a href="https://www.academia.edu/129795613/Hofiz_Xorazmiy_lirikasida_oshiq_mashuq_obrazlari_orqali_ifodalangan_shaxs_kamoloti" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/022_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">23</td>
+                <td>Hofiz Xorazmiy lirikasida ma’shuq obrazining axloqiy-estetik funksiyasi va didaktik talqini</td>
+                <td><a href="https://inlibrary.uz/index.php/universaljurnal/article/view/120925" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/023_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">24</td>
+                <td>Hofiz Xorazmiy ijodida shaxs kamolotiga oid didaktik qarashlar</td>
+                <td><a href="https://fanistiqbollari.uz/index.php/fanistiqbollari/issue/view/7/15" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/024_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">25</td>
+                <td>Shaxs ma’naviy-axloqiy kamolotida badiiy adabiyotning o‘rni (Hofiz Xorazmiy ijodi misolida)</td>
+                <td><a href="https://scholar.kokanduni.uz/index.php/rb/article/view/1046/976" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/025_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">26</td>
+                <td>Hofiz Xorazmiyning ijodiy merosi ta’lim tizimga joriy etish imkoniyatlarining nazariy tahlili</td>
+                <td><a href="https://kokandsu.uz/scientific_journals/journal_68a3fa5adb33d.pdf" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/026_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">27</td>
+                <td>Hofiz Xorazmiy ijodiy merosida hikmatli fikrlar va ularining mavzu ko‘lami</td>
+                <td><a href="https://www.academia.edu/130157333/Hofiz_Xorazmiy_ijodiy_merosida_hikmatli_fikrlar_va_ularining_mavzu_ko_lami" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/027_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">28</td>
+                <td>Hofiz Xorazmiy lirikasida aks etgan shaxs qiyofasi va uni zamonaviy ta'limda qo‘llashning amaliy vositalari</td>
+                <td><a href="https://www.academia.edu/130194091/Hofiz_Xorazmiy_lirikasida_aks_etgan_shaxs_qiyofasi_va_uni_zamonaviy_talimda_qo_llashning_amaliy_vositalari" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/028_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">29</td>
+                <td>Turkiy til, tafakkur va tarbiya birligi: Hofiz Xorazmiy ijodiy merosida hikmatli fikrlar</td>
+                <td><a href="https://www.academia.edu/143009245/Turkiy_til_tafakkur_va_tarbiya_birligi_Hofiz_Xorazmiy_ijodiy_merosida_hikmatli_fikrlar" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/029_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">30</td>
+                <td>Hofiz Xorazmiyning didaktik qarashlari va uning pedagogik ahamiyati. (Uslubiy qo'llanma)</td>
+                <td><a href="https://www.academia.edu/144124778/Hofiz_Xorazmiyning_didaktik_qarashlari_va_uning_pedagogik_ahamiyati" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/030_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">31</td>
+                <td>Hofiz Xorazmiy ijodida badiiy qarashlarning didaktik talqini va uning o‘rganilishi</td>
+                <td><a href="https://eoconf.com/index.php/icmse/article/view/137" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/031_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">32</td>
+                <td>Turkiy adabiyotda shaxs kamoloti: Hofiz Xorazmiy didaktik qarashlari misolida pedagogik model</td>
+                <td><a href="https://www.wosjournals.com/index.php/ptj/article/view/5987/6411" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/032_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">33</td>
+                <td>Pedagogik faoliyatda Hofiz Xorazmiyning tarbiyaviy ahamiyatga ega yondashuvlardan foydalanish imkoniyatlari</td>
+                <td><a href="https://www.academia.edu/145139440/Pedagogik_faoliyatda_Hofiz_Xorazmiyning_tarbiyaviy_ahamiyatga_ega_yondashuvlardan_foydalanish_imkoniyatlari" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/033_.pdf" download>Yuklab olish</a></td>
+            </tr>
+            <tr>
+                <td class="center">34</td>
+                <td>Turkiy adabiyot durdonalari asosida yoshlarning axloqiy fazilatlarini rivojlantirish (Hofiz Xorazmiy ijodi misolida)</td>
+                <td><a href="https://www.academia.edu/145216039/Turkiy_adabiyot_durdonalari_asosida_yoshlarning_axloqiy_fazilatlarini_rivojlantirish_Hofiz_Xorazmiy_ijodi_misolida_" target="_blank">Ko‘rish</a></td>
+                <td><a href="/media/maqollar/034_.pdf" download>Yuklab olish</a></td>
+            </tr>
+        </tbody>
+    </table>
 
-            <div class="table-responsive" style="background-color: #f4f5fe; background: url(/static/img/header1.png);  ">
-                <img src="{% static 'img/ilmiy1.png' %}" class="img-fluid" alt="Responsive image"><br><br><br>
-                <img src="{% static 'img/ilmiy2.png' %}" class="img-fluid" alt="Responsive image"><br><br><br>
-                <img src="{% static 'img/ilmiy3.png' %}" class="img-fluid" alt="Responsive image"> 
-            </div>   
+    <div class="footer">
+        Tadqiqotchining yangi ilmiy maqolalari bilan yanada ko‘proq tanishish: 
+        <a href="https://independent.academia.edu/Shukurjon_Yeldashbayevna" target="_blank">Academia.edu profil</a>
+    </div>
+        </div>
     </section>
   </main>
 

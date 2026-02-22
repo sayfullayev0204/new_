@@ -1,7 +1,3 @@
-<iframe src="{{ i.embed_url }}" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-</iframe>
 <!DOCTYPE html>
 <html lang="en">
 {% load i18n %}
@@ -9,7 +5,6 @@
 
 <head charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>school 29</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -53,27 +48,12 @@
   <main class="main">
 
     <!-- About Section -->
-    <section id="about" class="about section" style="background-color: #f4f5fe; background: url(/static/img/header1.png); margin-top: -150px;">
-      <div class="container section-title" data-aos="fade-up" style="margin-top: 60px;">
-        <div><span>{{new.sarlavha}}</span></div>
-        <div class="row">
+    <section id="about" class="about section" style="background-color: #f4f5fe; background: url(/static/img/header1.png); margin-top: -150px;justify-content: center;">
+      <div class="container " data-aos="fade-up" style="margin-top: 160px;">
+        <div style="text-align: center; margin-bottom: 30px;"><span style="color: #040677; font-weight: bold; font-size: 30px;">{{new.sarlavha}}</span></div>
+        <div class="row" style="justify-content: center;">
                 <!-- Yangilik detali chap tomonda -->
-                <div class="col-lg-8">
-                    <div class="card shadow-sm p-4">
-                        {% if new.main_image %}
-                        <div class="news-image">
-                            <img src="{{ new.main_image.url }}" style="max-width: 100%" alt="{{ new.sarlavha }}">
-                        </div>
-                        {% endif %}
-                        <div class="news-date" style="font-size: 0.9rem;text-align: right; margin-bottom: 15px;">
-                            {{ new.date|date:"F d, Y" }}
-                        </div>
-                        <div class="news-content" style="font-size: 1.2rem; line-height: 1.8; text-align: justify; color: black; font-family: 'Marck Script', cursive;">
-                            {{ new.matn|linebreaks  }}
-                        </div>
-                    </div>
-                    
-                </div>
+                 
                 {% if new.video_file %}
                 <div class="col-lg-4">
                         <div class="blog_right_sidebar">
@@ -86,6 +66,22 @@
                         </div> <br>
                 </div>
                 {% endif %}
+                <div class="col-lg-6">
+                    <div class="card shadow-sm p-4">
+                        {% if new.main_image %}
+                        <div class="news-image">
+                            <img src="{{ new.main_image.url }}" style="max-width: 100%" alt="{{ new.sarlavha }}">
+                        </div>
+                        {% endif %}
+                        <div class="news-date" style="font-size: 0.9rem;text-align: right; margin-bottom: 15px;">
+                            <!-- {{ new.date|date:"F d, Y" }} -->
+                        </div>
+                        <div class="news-content" style="font-size: 1.2rem; line-height: 1.8; text-align: justify; color: black; font-family: 'Roboto', cursive;">
+                            {{ new.matn|linebreaks  }}
+                        </div>
+                    </div>
+                    
+                </div>
                 {% if new.images.all %}
                 <div class="col-lg-4">
                     <div class="blog_right_sidebar">

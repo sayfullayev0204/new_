@@ -25,9 +25,9 @@ SECRET_KEY = 'django-insecure-*4!9nz61xlr#&7w7=^e8_1)1420ql=!0a1%^yrqoc6-ea0e*bi
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'phoenix-rapid-factually.ngrok-free.app']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'phoenix-rapid-factually.ngrok-free.app','hofiz-xorazmiy.uz']
 
-CSRF_TRUSTED_ORIGINS = ['https://phoenix-rapid-factually.ngrok-free.app','http://localhost:8000', 'http://127.0.0.1:8000']
+CSRF_TRUSTED_ORIGINS = ['https://phoenix-rapid-factually.ngrok-free.app','http://localhost:8000', 'http://127.0.0.1:8000','https://hofiz-xorazmiy.uz']
 # Application definition
 
 INSTALLED_APPS = [
